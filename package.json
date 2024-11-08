@@ -1,0 +1,13 @@
+{
+  "name": "shortcode-to-block",
+  "version": "1.0.0",
+  "scripts": {
+    "wp-env": "wp-env",
+    "build": "wp-scripts build --webpack-src-dir=message",
+    "start": "wp-scripts start --webpack-src-dir=message"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.11.0",
+    "@wordpress/scripts": "^30.4.0"
+  }
+}
