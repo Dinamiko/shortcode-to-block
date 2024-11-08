@@ -15,10 +15,12 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function save() {
+export default function save({attributes}) {
+	const { text } = attributes;
+
 	return (
 		<p { ...useBlockProps.save() }>
-			{ 'Message – hello from the saved content!' }
+			{ text }
 		</p>
 	);
 }
